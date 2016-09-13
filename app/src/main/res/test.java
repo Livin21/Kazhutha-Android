@@ -1,0 +1,14 @@
+case "heartsAce":return heartsAce;
+        case "heartsOne":return heartOne;
+        case "heartsTwo":return heartTwo;
+        case "heartsThree":return heartThree;
+        case "heartsFour":return heartFour;
+        case "heartsFive":return heartFive;
+        case "heartsSix":return heartSix;
+        case "heartsSeven":return heartSeven;
+        case "heartsEight":return heartEight;
+        case "heartsNine":return heartNine;
+        case "heartsTen":return heartTen;
+        case "heartsJack":return heartJack;
+        case "heartsQueen":return heartQueen;
+        case "heartsKing":return  heartKing;

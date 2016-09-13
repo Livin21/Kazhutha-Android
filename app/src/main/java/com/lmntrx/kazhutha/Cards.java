@@ -41,54 +41,54 @@ public class Cards {
         cardDictonary.put("13","clubKing");
 
         //Diamond Cards
-        cardDictonary.put("14","DiamondAce");
-        cardDictonary.put("15","DiamondOne");
-        cardDictonary.put("16","DiamondTwo");
-        cardDictonary.put("17","DiamondThree");
-        cardDictonary.put("18","DiamondFour");
-        cardDictonary.put("19","DiamondFive");
-        cardDictonary.put("20","DiamondSix");
-        cardDictonary.put("21","DiamondSeven");
-        cardDictonary.put("22","DiamondEight");
-        cardDictonary.put("23","DiamondNine");
-        cardDictonary.put("24","DiamondTen");
-        cardDictonary.put("25","DiamondJack");
-        cardDictonary.put("26","DiamondQueen");
-        cardDictonary.put("27","DiamondKing");
+        cardDictonary.put("14","diamondAce");
+        cardDictonary.put("15","diamondOne");
+        cardDictonary.put("16","diamondTwo");
+        cardDictonary.put("17","diamondThree");
+        cardDictonary.put("18","diamondFour");
+        cardDictonary.put("19","diamondFive");
+        cardDictonary.put("20","diamondSix");
+        cardDictonary.put("21","diamondSeven");
+        cardDictonary.put("22","diamondEight");
+        cardDictonary.put("23","diamondNine");
+        cardDictonary.put("24","diamondTen");
+        cardDictonary.put("25","diamondJack");
+        cardDictonary.put("26","diamondQueen");
+        cardDictonary.put("27","diamondKing");
 
 
         //HeartsCard
-        cardDictonary.put("28","HeartsAce");
-        cardDictonary.put("29","HeartsOne");
-        cardDictonary.put("30","HeartsTwo");
-        cardDictonary.put("31","HeartsThree");
-        cardDictonary.put("32","HeartsFour");
-        cardDictonary.put("33","HeartsFive");
-        cardDictonary.put("34","HeartsSix");
-        cardDictonary.put("35","HeartsSeven");
-        cardDictonary.put("36","HeartsEight");
-        cardDictonary.put("37","HeartsNine");
-        cardDictonary.put("38","HeartsTen");
-        cardDictonary.put("39","HeartsJack");
-        cardDictonary.put("40","HeartsQueen");
-        cardDictonary.put("41","HeartsKing");
+        cardDictonary.put("28","heartsAce");
+        cardDictonary.put("29","heartsOne");
+        cardDictonary.put("30","heartsTwo");
+        cardDictonary.put("31","heartsThree");
+        cardDictonary.put("32","heartsFour");
+        cardDictonary.put("33","heartsFive");
+        cardDictonary.put("34","heartsSix");
+        cardDictonary.put("35","heartsSeven");
+        cardDictonary.put("36","heartsEight");
+        cardDictonary.put("37","heartsNine");
+        cardDictonary.put("38","heartsTen");
+        cardDictonary.put("39","heartsJack");
+        cardDictonary.put("40","heartsQueen");
+        cardDictonary.put("41","heartsKing");
 
 
         //SpadesCard
-        cardDictonary.put("42","SpadesAce");
-        cardDictonary.put("43","SpadesOne");
-        cardDictonary.put("44","SpadesTwo");
-        cardDictonary.put("45","SpadesThree");
-        cardDictonary.put("46","SpadesFour");
-        cardDictonary.put("47","SpadesFive");
-        cardDictonary.put("48","SpadesSix");
-        cardDictonary.put("49","SpadesSeven");
-        cardDictonary.put("50","SpadesEight");
-        cardDictonary.put("51","SpadesNine");
-        cardDictonary.put("52","SpadesTen");
-        cardDictonary.put("53","SpadesJack");
-        cardDictonary.put("54","SpadesQueen");
-        cardDictonary.put("55","SpadesKing");
+        cardDictonary.put("42","spadesAce");
+        cardDictonary.put("43","spadesOne");
+        cardDictonary.put("44","spadesTwo");
+        cardDictonary.put("45","spadesThree");
+        cardDictonary.put("46","spadesFour");
+        cardDictonary.put("47","spadesFive");
+        cardDictonary.put("48","spadesSix");
+        cardDictonary.put("49","spadesSeven");
+        cardDictonary.put("50","spadesEight");
+        cardDictonary.put("51","spadesNine");
+        cardDictonary.put("52","spadesTen");
+        cardDictonary.put("53","spadesJack");
+        cardDictonary.put("54","spadesQueen");
+        cardDictonary.put("55","spadesKing");
 
         //Dictonary Ends
     }
@@ -166,12 +166,74 @@ public class Cards {
 
 //Card objects end
 
-    public void gameCardGenerator(String cardName)
+    public static Cards getCard(String cardName)
     {
         switch (cardName)
         {
-            case "spadesTen":Cards spadeTen=new Cards(10,"Black","spades");
+            case "clubAce":return clubAce;
+            case "clubOne":return  clubOne;
+            case "clubTwo":return clubTwo;
+            case "clubThree":return clubThree;
+            case "clubFour":return clubFour;
+            case "clubFive":return clubFive;
+            case "clubSix":return clubSix;
+            case "clubSeven":return clubSeven;
+            case "clubEight":return clubEight;
+            case "clubNine":return  clubNine;
+            case "clubTen":return clubTen;
+            case "clubJack":return clubJack;
+            case "clubQueen":return clubQueen;
+            case "clubKing":return clubKing;
+
+
+            case "diamondAce":return diamondAce;
+            case "diamondOne":return diamondOne;
+            case "diamondTwo":return diamondTwo;
+            case "diamondThree":return diamondThree;
+            case "diamondFour":return diamondFour;
+            case "diamondFive":return diamondFive;
+            case "diamondSix":return diamondSix;
+            case "diamondSeven":return diamondSeven;
+            case "diamondEight":return diamondEight;
+            case "diamondNine":return diamondNine;
+            case "diamondTen":return diamondTen;
+            case "diamondJack":return diamondJack;
+            case "diamondQueen":return diamondQueen;
+            case "diamondKing":return diamondKing;
+
+
+            case "heartsAce":return heartAce;
+            case "heartsOne":return heartOne;
+            case "heartsTwo":return heartTwo;
+            case "heartsThree":return heartThree;
+            case "heartsFour":return heartFour;
+            case "heartsFive":return heartFive;
+            case "heartsSix":return heartSix;
+            case "heartsSeven":return heartSeven;
+            case "heartsEight":return heartEight;
+            case "heartsNine":return heartNine;
+            case "heartsTen":return heartTen;
+            case "heartsJack":return heartJack;
+            case "heartsQueen":return heartQueen;
+            case "heartsKing":return  heartKing;
+
+
+            case "spadesAce":return spadesAce;
+            case "spadesOne":return spadesOne;
+            case "spadesTwo":return spadesTwo;
+            case "spadesThree":return spadesThree;
+            case "spadesFour":return spadesFour;
+            case "spadesFive":return spadesFive;
+            case "spadesSix":return spadesSix;
+            case "spadesSeven":return spadesSeven;
+            case "spadesEight":return spadesEight;
+            case "spadesNine":return spadesNine;
+            case "spadesTen":return spadesTen;
+            case "spadesJack":return spadesJack;
+            case "spadesQueen":return spadesQueen;
+            case "spadesKing":return spadesKing;
         }
+        return(new Cards(999,"blue","blue"));
     }
 }
 

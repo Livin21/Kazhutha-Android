@@ -19,9 +19,9 @@ public class SinglePlayer extends AppCompatActivity {
         ArrayList<Cards>userCards=new ArrayList<Cards>();
         Random rg = new Random();
         for (int i = 0; i < 8; i++){
-            Log.i("8ball",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
-            //TODO:Add random card instead of clubAce
-            userCards.add(Cards.clubAce);
+            String generatedCard=Cards.cardDictonary.get(String.valueOf(rg.nextInt(55)));
+            Cards myCard=Cards.getCard(generatedCard);
+            Log.i("Mava",myCard.type);
         }
 
         Log.i("1ball",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
