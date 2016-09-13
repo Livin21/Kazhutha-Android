@@ -14,15 +14,18 @@ public class SinglePlayer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_player);
+        Cards.createCards();
         Random rg = new Random();
         for (int i = 0; i < 8; i++){
-            Log.i("8Ball",String.valueOf(rg.nextInt(55)));
+            Log.i("8ball",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
         }
+
+        Log.i("1ball",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
     }
 
     public void generateNewCard(View view)
     {
         Random rg=new Random();
-        Log.i("Mava",String.valueOf(rg.nextInt(55)));
+        Log.i("1ball",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
     }
 }

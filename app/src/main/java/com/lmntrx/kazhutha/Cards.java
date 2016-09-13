@@ -9,6 +9,7 @@ import java.util.Map;
 public class Cards {
     int number;
     String color,type;
+    static  Map<String, String> cardDictonary = new HashMap<String, String>();
 
 
     //Constructor
@@ -23,8 +24,6 @@ public class Cards {
     public static void createCards() {
 
         //Dictonary Start
-        Map<String, String> cardDictonary = new HashMap<String, String>();
-
         //Club Cards
         cardDictonary.put("0","clubAce");
         cardDictonary.put("1","clubOne");
