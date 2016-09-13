@@ -10,7 +10,19 @@ public class Cards {
     int number;
     String color,type;
 
+
+    //Constructor
+    public Cards(int num,String col,String ty)
+    {
+        this.number=num;
+        this.color=col;
+        this.type=ty;
+    }
+
+    //CreateCards Function
     public static void createCards() {
+
+        //Dictonary Start
         Map<String, String> cardDictonary = new HashMap<String, String>();
 
         //Club Cards
@@ -79,8 +91,84 @@ public class Cards {
         cardDictonary.put("54","SpadesQueen");
         cardDictonary.put("55","SpadesKing");
 
+        //Dictonary Ends
 
-        //TODO:Create card objects
+
+
+
+        //Card Object starts
+
+        //Club Card objects
+        Cards clubAce=new Cards(0,"Black","club");
+        Cards clubOne=new Cards(1,"Black","club");
+        Cards clubTwo=new Cards(2,"Black","club");
+        Cards clubThree=new Cards(3,"Black","club");
+        Cards clubFour=new Cards(4,"Black","club");
+        Cards clubFive=new Cards(5,"Black","club");
+        Cards clubSix=new Cards(6,"Black","club");
+        Cards clubSeven=new Cards(7,"Black","club");
+        Cards clubEight=new Cards(8,"Black","club");
+        Cards clubNine=new Cards(9,"Black","club");
+        Cards clubTen=new Cards(10,"Black","club");
+        Cards clubJack=new Cards(11,"Black","club");
+        Cards clubQueen=new Cards(12,"Black","club");
+        Cards clubKing=new Cards(13,"Black","club");
+
+
+        //Diamond card objects
+
+        Cards diamondAce=new Cards(0,"Red","diamond");
+        Cards diamondOne=new Cards(1,"Red","diamond");
+        Cards diamondTwo=new Cards(2,"Red","diamond");
+        Cards diamondThree=new Cards(3,"Red","diamond");
+        Cards diamondFour=new Cards(4,"Red","diamond");
+        Cards diamondFive=new Cards(5,"Red","diamond");
+        Cards diamondSix=new Cards(6,"Red","diamond");
+        Cards diamondSeven=new Cards(7,"Red","diamond");
+        Cards diamondEight=new Cards(8,"Red","diamond");
+        Cards diamondNine=new Cards(9,"Red","diamond");
+        Cards diamondTen=new Cards(10,"Red","diamond");
+        Cards diamondJack=new Cards(11,"Red","diamond");
+        Cards diamondQueen=new Cards(12,"Red","diamond");
+        Cards diamondKing=new Cards(13,"Red","diamond");
+
+
+        //Hearts Card objects
+
+        Cards heartAce=new Cards(0,"Red","heart");
+        Cards heartOne=new Cards(1,"Red","heart");
+        Cards heartTwo=new Cards(2,"Red","heart");
+        Cards heartThree=new Cards(3,"Red","heart");
+        Cards heartFour=new Cards(4,"Red","heart");
+        Cards heartFive=new Cards(5,"Red","heart");
+        Cards heartSix=new Cards(6,"Red","heart");
+        Cards heartSeven=new Cards(7,"Red","heart");
+        Cards heartEight=new Cards(8,"Red","heart");
+        Cards heartNine=new Cards(9,"Red","heart");
+        Cards heartTen=new Cards(10,"Red","heart");
+        Cards heartJack=new Cards(11,"Red","heart");
+        Cards heartQueen=new Cards(12,"Red","heart");
+        Cards heartKing=new Cards(13,"Red","heart");
+
+
+        //Spades Card objects
+        Cards spadesAce=new Cards(0,"Black","spades");
+        Cards spadesOne=new Cards(1,"Black","spades");
+        Cards spadesTwo=new Cards(2,"Black","spades");
+        Cards spadesThree=new Cards(3,"Black","spades");
+        Cards spadesFour=new Cards(4,"Black","spades");
+        Cards spadesFive=new Cards(5,"Black","spades");
+        Cards spadesSix=new Cards(6,"Black","spades");
+        Cards spadesSeven=new Cards(7,"Black","spades");
+        Cards spadesEight=new Cards(8,"Black","spades");
+        Cards spadesNine=new Cards(9,"Black","spades");
+        Cards spadesTen=new Cards(10,"Black","spades");
+        Cards spadesJack=new Cards(11,"Black","spades");
+        Cards spadesQueen=new Cards(12,"Black","spades");
+        Cards spadesKing=new Cards(13,"Black","spades");
+
+
+        //Card objects end
     }
 }
 
