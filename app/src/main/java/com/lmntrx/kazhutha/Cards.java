@@ -167,7 +167,6 @@ public class Cards {
         Cards spadesQueen=new Cards(12,"Black","spades");
         Cards spadesKing=new Cards(13,"Black","spades");
 
-
         //Card objects end
     }
 }
