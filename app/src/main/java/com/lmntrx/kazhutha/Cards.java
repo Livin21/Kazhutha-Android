@@ -91,82 +91,87 @@ public class Cards {
         cardDictonary.put("55","SpadesKing");
 
         //Dictonary Ends
+    }
 
 
+    //Static cards
+    //Club Card objects
+    static Cards clubAce=new Cards(0,"Black","club");
+    static Cards clubOne=new Cards(1,"Black","club");
+    static Cards clubTwo=new Cards(2,"Black","club");
+    static Cards clubThree=new Cards(3,"Black","club");
+    static Cards clubFour=new Cards(4,"Black","club");
+    static Cards clubFive=new Cards(5,"Black","club");
+    static Cards clubSix=new Cards(6,"Black","club");
+    static Cards clubSeven=new Cards(7,"Black","club");
+    static Cards clubEight=new Cards(8,"Black","club");
+    static Cards clubNine=new Cards(9,"Black","club");
+    static Cards clubTen=new Cards(10,"Black","club");
+    static Cards clubJack=new Cards(11,"Black","club");
+    static Cards clubQueen=new Cards(12,"Black","club");
+    static Cards clubKing=new Cards(13,"Black","club");
 
 
-        //Card Object starts
+    //Diamond card objects
 
-        //Club Card objects
-        Cards clubAce=new Cards(0,"Black","club");
-        Cards clubOne=new Cards(1,"Black","club");
-        Cards clubTwo=new Cards(2,"Black","club");
-        Cards clubThree=new Cards(3,"Black","club");
-        Cards clubFour=new Cards(4,"Black","club");
-        Cards clubFive=new Cards(5,"Black","club");
-        Cards clubSix=new Cards(6,"Black","club");
-        Cards clubSeven=new Cards(7,"Black","club");
-        Cards clubEight=new Cards(8,"Black","club");
-        Cards clubNine=new Cards(9,"Black","club");
-        Cards clubTen=new Cards(10,"Black","club");
-        Cards clubJack=new Cards(11,"Black","club");
-        Cards clubQueen=new Cards(12,"Black","club");
-        Cards clubKing=new Cards(13,"Black","club");
-
-
-        //Diamond card objects
-
-        Cards diamondAce=new Cards(0,"Red","diamond");
-        Cards diamondOne=new Cards(1,"Red","diamond");
-        Cards diamondTwo=new Cards(2,"Red","diamond");
-        Cards diamondThree=new Cards(3,"Red","diamond");
-        Cards diamondFour=new Cards(4,"Red","diamond");
-        Cards diamondFive=new Cards(5,"Red","diamond");
-        Cards diamondSix=new Cards(6,"Red","diamond");
-        Cards diamondSeven=new Cards(7,"Red","diamond");
-        Cards diamondEight=new Cards(8,"Red","diamond");
-        Cards diamondNine=new Cards(9,"Red","diamond");
-        Cards diamondTen=new Cards(10,"Red","diamond");
-        Cards diamondJack=new Cards(11,"Red","diamond");
-        Cards diamondQueen=new Cards(12,"Red","diamond");
-        Cards diamondKing=new Cards(13,"Red","diamond");
+    static Cards diamondAce=new Cards(0,"Red","diamond");
+    static Cards diamondOne=new Cards(1,"Red","diamond");
+    static Cards diamondTwo=new Cards(2,"Red","diamond");
+    static Cards diamondThree=new Cards(3,"Red","diamond");
+    static Cards diamondFour=new Cards(4,"Red","diamond");
+    static Cards diamondFive=new Cards(5,"Red","diamond");
+    static Cards diamondSix=new Cards(6,"Red","diamond");
+    static Cards diamondSeven=new Cards(7,"Red","diamond");
+    static Cards diamondEight=new Cards(8,"Red","diamond");
+    static Cards diamondNine=new Cards(9,"Red","diamond");
+    static Cards diamondTen=new Cards(10,"Red","diamond");
+    static Cards diamondJack=new Cards(11,"Red","diamond");
+    static Cards diamondQueen=new Cards(12,"Red","diamond");
+    static Cards diamondKing=new Cards(13,"Red","diamond");
 
 
-        //Hearts Card objects
+    //Hearts Card objects
 
-        Cards heartAce=new Cards(0,"Red","heart");
-        Cards heartOne=new Cards(1,"Red","heart");
-        Cards heartTwo=new Cards(2,"Red","heart");
-        Cards heartThree=new Cards(3,"Red","heart");
-        Cards heartFour=new Cards(4,"Red","heart");
-        Cards heartFive=new Cards(5,"Red","heart");
-        Cards heartSix=new Cards(6,"Red","heart");
-        Cards heartSeven=new Cards(7,"Red","heart");
-        Cards heartEight=new Cards(8,"Red","heart");
-        Cards heartNine=new Cards(9,"Red","heart");
-        Cards heartTen=new Cards(10,"Red","heart");
-        Cards heartJack=new Cards(11,"Red","heart");
-        Cards heartQueen=new Cards(12,"Red","heart");
-        Cards heartKing=new Cards(13,"Red","heart");
+    static Cards heartAce=new Cards(0,"Red","heart");
+    static Cards heartOne=new Cards(1,"Red","heart");
+    static Cards heartTwo=new Cards(2,"Red","heart");
+    static Cards heartThree=new Cards(3,"Red","heart");
+    static Cards heartFour=new Cards(4,"Red","heart");
+    static Cards heartFive=new Cards(5,"Red","heart");
+    static Cards heartSix=new Cards(6,"Red","heart");
+    static Cards heartSeven=new Cards(7,"Red","heart");
+    static Cards heartEight=new Cards(8,"Red","heart");
+    static Cards heartNine=new Cards(9,"Red","heart");
+    static Cards heartTen=new Cards(10,"Red","heart");
+    static Cards heartJack=new Cards(11,"Red","heart");
+    static Cards heartQueen=new Cards(12,"Red","heart");
+    static Cards heartKing=new Cards(13,"Red","heart");
 
 
-        //Spades Card objects
-        Cards spadesAce=new Cards(0,"Black","spades");
-        Cards spadesOne=new Cards(1,"Black","spades");
-        Cards spadesTwo=new Cards(2,"Black","spades");
-        Cards spadesThree=new Cards(3,"Black","spades");
-        Cards spadesFour=new Cards(4,"Black","spades");
-        Cards spadesFive=new Cards(5,"Black","spades");
-        Cards spadesSix=new Cards(6,"Black","spades");
-        Cards spadesSeven=new Cards(7,"Black","spades");
-        Cards spadesEight=new Cards(8,"Black","spades");
-        Cards spadesNine=new Cards(9,"Black","spades");
-        Cards spadesTen=new Cards(10,"Black","spades");
-        Cards spadesJack=new Cards(11,"Black","spades");
-        Cards spadesQueen=new Cards(12,"Black","spades");
-        Cards spadesKing=new Cards(13,"Black","spades");
+    //Spades Card objects
+    static Cards spadesAce=new Cards(0,"Black","spades");
+    static Cards spadesOne=new Cards(1,"Black","spades");
+    static Cards spadesTwo=new Cards(2,"Black","spades");
+    static Cards spadesThree=new Cards(3,"Black","spades");
+    static Cards spadesFour=new Cards(4,"Black","spades");
+    static Cards spadesFive=new Cards(5,"Black","spades");
+    static Cards spadesSix=new Cards(6,"Black","spades");
+    static Cards spadesSeven=new Cards(7,"Black","spades");
+    static Cards spadesEight=new Cards(8,"Black","spades");
+    static Cards spadesNine=new Cards(9,"Black","spades");
+    static Cards spadesTen=new Cards(10,"Black","spades");
+    static Cards spadesJack=new Cards(11,"Black","spades");
+    static Cards spadesQueen=new Cards(12,"Black","spades");
+    static Cards spadesKing=new Cards(13,"Black","spades");
 
-        //Card objects end
+//Card objects end
+
+    public void gameCardGenerator(String cardName)
+    {
+        switch (cardName)
+        {
+            case "spadesTen":Cards spadeTen=new Cards(10,"Black","spades");
+        }
     }
 }
 

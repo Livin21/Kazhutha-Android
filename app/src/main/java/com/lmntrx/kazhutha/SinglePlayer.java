@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 //TODO:MAP NUMBERS TO CARDS
@@ -15,9 +16,12 @@ public class SinglePlayer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_player);
         Cards.createCards();
+        ArrayList<Cards>userCards=new ArrayList<Cards>();
         Random rg = new Random();
         for (int i = 0; i < 8; i++){
             Log.i("8ball",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
+            //TODO:Add random card instead of clubAce
+            userCards.add(Cards.clubAce);
         }
 
         Log.i("1ball",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
