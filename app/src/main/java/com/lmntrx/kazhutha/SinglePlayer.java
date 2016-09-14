@@ -17,7 +17,7 @@ import com.larvalabs.svgandroid.SVGParser;
 import java.util.ArrayList;
 import java.util.Random;
 
-//TODO:MAP IMAGES TO CARDS
+//TODO:Import image assets
 //TODO:Restart button
 //TODO:Visual polish
 
@@ -39,11 +39,12 @@ public class SinglePlayer extends AppCompatActivity {
         Random rg = new Random();
         for (int i = 0; i < 8; i++){
             String generatedCard=Cards.cardDictonary.get(String.valueOf(rg.nextInt(55)));
+            String generatedCardinSmall=generatedCard.toLowerCase();
             Cards myCard=Cards.getCard(generatedCard);
             String imageViewId="card"+String.valueOf(i);
             int dynamicImageViewId=getResources().getIdentifier(imageViewId,"id",this.getPackageName());
             ImageView userCardDisplay=(ImageView)findViewById(dynamicImageViewId);
-            int imageResourceId=getResources().getIdentifier(generatedCard,"drawable",this.getPackageName());
+            int imageResourceId=getResources().getIdentifier(generatedCardinSmall,"drawable",this.getPackageName());
             //TODO:Uncomment below line when assets are imported
             //userCardDisplay.setImageResource(imageResourceId);
             userCards.add(myCard);
