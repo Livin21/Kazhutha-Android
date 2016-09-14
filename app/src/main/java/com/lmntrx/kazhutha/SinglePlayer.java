@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.larvalabs.svgandroid.SVG;
 import com.larvalabs.svgandroid.SVGParser;
@@ -15,18 +17,24 @@ import com.larvalabs.svgandroid.SVGParser;
 import java.util.ArrayList;
 import java.util.Random;
 
-//TODO:MAP NUMBERS TO CARDS
+//TODO:MAP IMAGES TO CARDS
+//TODO:Restart button
+//TODO:Visual polish
+
 public class SinglePlayer extends AppCompatActivity {
 
+
+    //Global Objects
     ArrayList<Cards>userCards=new ArrayList<Cards>();
     Cards computerCard;
     boolean gameOver=false;
-    int numberOfTries=0;
+    int numberOfTries=0;//Score variable
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_player);
+        //Issue cards once activity is launched
         Cards.createCards();
         Random rg = new Random();
         for (int i = 0; i < 8; i++){
@@ -35,11 +43,13 @@ public class SinglePlayer extends AppCompatActivity {
             userCards.add(myCard);
             Log.i("userCards",generatedCard);
         }
-
+        //Generate computer card
         computerCard=Cards.getCard(Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
         Log.i("computerCard",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
     }
 
+
+    //This function performs a cut
     public void generateNewCard(View view)
     {
         Random rg=new Random();
@@ -49,6 +59,8 @@ public class SinglePlayer extends AppCompatActivity {
         numberOfTries++;
     }
 
+
+    //This function performs playing logic
     public void playCard(View view)
     {
         numberOfTries++;
@@ -63,6 +75,8 @@ public class SinglePlayer extends AppCompatActivity {
                 userCards.set(tag, Cards.deadCard);
             }
         }
+
+        //Check if user has played all cards
         gameOver=true;
         for(Cards card:userCards)
         {
@@ -78,9 +92,12 @@ public class SinglePlayer extends AppCompatActivity {
         */
         if(gameOver)
         {
-            //TODO:GAME OVER LOGIC
             Log.i("Game over","Yes");
             Log.i("Score",String.valueOf(numberOfTries));
+            RelativeLayout loseLayout=(RelativeLayout)findViewById(R.id.loseLayout);
+            loseLayout.setVisibility(View.VISIBLE);
+            TextView scoreBoard=(TextView)findViewById(R.id.scoreBoard);
+            scoreBoard.setText("Score:"+String.valueOf(numberOfTries));
         }
     }
 }
