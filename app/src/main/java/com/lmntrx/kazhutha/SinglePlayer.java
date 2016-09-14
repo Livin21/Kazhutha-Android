@@ -51,14 +51,19 @@ public class SinglePlayer extends AppCompatActivity {
             Log.i("userCards",imageViewId);
         }
         //Generate computer card
-        computerCard=Cards.getCard(Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
+        String generatedComputerCard=Cards.cardDictonary.get(String.valueOf(rg.nextInt(55)));
+        computerCard=Cards.getCard(generatedComputerCard);
+        String generatedComputerCardinSmall=generatedComputerCard.toLowerCase();
         Log.i("computerCard",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
-        //Test code
-        /*String testId="card0";
-        int testIVid=getResources().getIdentifier(testId,"id",this.getPackageName());
-        ImageView testImageView=(ImageView)findViewById(testIVid);
-        testImageView.setImageResource(getResources().getIdentifier("diamondking","drawable",this.getPackageName()));
-        */
+        setComputerCardImage(generatedComputerCardinSmall);
+    }
+
+    public void setComputerCardImage(String cardName)
+    {
+        ImageView computerCardDisplay=(ImageView)findViewById(R.id.computerCard);
+        //TODO:Uncomment below line when assets are imported;
+        //computerCardDisplay.setImageResource(getResources().getIdentifier(cardName,"drawable",this.getPackageName()));
+
     }
 
 
@@ -70,6 +75,8 @@ public class SinglePlayer extends AppCompatActivity {
         Log.i("NextGenCard",nextGeneratedCard);
         computerCard=Cards.getCard(nextGeneratedCard);
         numberOfTries++;
+        String nextGeneratedCardinSmall=nextGeneratedCard.toLowerCase();
+        setComputerCardImage(nextGeneratedCardinSmall);
     }
 
 
