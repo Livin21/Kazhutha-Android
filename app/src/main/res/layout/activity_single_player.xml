@@ -27,6 +27,16 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:onClick="restartGame"
+            android:id="@+id/restartButton"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/scoreBoard"
+            android:layout_toEndOf="@+id/scoreBoard" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -34,6 +44,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:id="@+id/computerCards"
+        android:visibility="visible"
         >
 
         <ImageView
@@ -62,6 +73,7 @@
         android:rowCount="2"
         android:layout_gravity="center_horizontal"
         android:id="@+id/userCards"
+        android:visibility="visible"
         >
 
         <ImageView
