@@ -104,6 +104,7 @@ public class SinglePlayer extends AppCompatActivity {
                 Log.i("Match found", cardUserPlayed.type + " " + computerCard.type);
                 userCards.set(tag, Cards.deadCard);
                 ((ImageView) view).setImageResource(R.drawable.backface);
+                setComputerCardImage(cardUserPlayed.name);
             }
         }
 
