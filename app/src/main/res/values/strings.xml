@@ -2,4 +2,6 @@
     <string name="app_name">Kazhutha</string>
     <string name="host">Host</string>
     <string name="join">Join</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_game_instructions">GameInstructions</string>
 </resources>

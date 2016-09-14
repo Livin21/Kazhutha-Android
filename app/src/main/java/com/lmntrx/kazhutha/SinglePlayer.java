@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.larvalabs.svgandroid.SVG;
-import com.larvalabs.svgandroid.SVGParser;
+//import com.larvalabs.svgandroid.SVG;
+//import com.larvalabs.svgandroid.SVGParser;
 
 import java.util.ArrayList;
 import java.util.Random;

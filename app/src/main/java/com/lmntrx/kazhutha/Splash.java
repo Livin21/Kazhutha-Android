@@ -19,7 +19,7 @@ public class Splash extends Activity {
         TimerTask switchActivity = new TimerTask() {
             @Override
             public void run() {
-                startActivity(new Intent(Splash.this,SinglePlayer.class));
+                startActivity(new Intent(Splash.this,MainMenu.class));
                 Splash.this.finish();
             }
         };
