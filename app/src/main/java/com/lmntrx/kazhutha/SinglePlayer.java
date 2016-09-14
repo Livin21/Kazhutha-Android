@@ -19,7 +19,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 //TODO:Import image assets
-//TODO:Restart button
 //TODO:Visual polish
 
 public class SinglePlayer extends AppCompatActivity {
