@@ -40,12 +40,24 @@ public class SinglePlayer extends AppCompatActivity {
         for (int i = 0; i < 8; i++){
             String generatedCard=Cards.cardDictonary.get(String.valueOf(rg.nextInt(55)));
             Cards myCard=Cards.getCard(generatedCard);
+            String imageViewId="card"+String.valueOf(i);
+            int dynamicImageViewId=getResources().getIdentifier(imageViewId,"id",this.getPackageName());
+            ImageView userCardDisplay=(ImageView)findViewById(dynamicImageViewId);
+            int imageResourceId=getResources().getIdentifier(generatedCard,"drawable",this.getPackageName());
+            //TODO:Uncomment below line when assets are imported
+            //userCardDisplay.setImageResource(imageResourceId);
             userCards.add(myCard);
-            Log.i("userCards",generatedCard);
+            Log.i("userCards",imageViewId);
         }
         //Generate computer card
         computerCard=Cards.getCard(Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
         Log.i("computerCard",Cards.cardDictonary.get(String.valueOf(rg.nextInt(55))));
+        //Test code
+        /*String testId="card0";
+        int testIVid=getResources().getIdentifier(testId,"id",this.getPackageName());
+        ImageView testImageView=(ImageView)findViewById(testIVid);
+        testImageView.setImageResource(getResources().getIdentifier("diamondking","drawable",this.getPackageName()));
+        */
     }
 
 
