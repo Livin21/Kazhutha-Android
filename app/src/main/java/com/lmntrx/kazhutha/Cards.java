@@ -6,6 +6,8 @@ import java.util.Map;
 /**
  * Created by nihal on 9/13/2016.
  */
+
+//TODO:Remove one cards
 public class Cards {
     int number;
     String color,type;
@@ -26,7 +28,7 @@ public class Cards {
         //Dictonary Start
         //Club Cards
         cardDictonary.put("0","clubAce");
-        cardDictonary.put("1","clubOne");
+        cardDictonary.put("1","clubAce");
         cardDictonary.put("2","clubTwo");
         cardDictonary.put("3","clubThree");
         cardDictonary.put("4","clubFour");
@@ -42,7 +44,7 @@ public class Cards {
 
         //Diamond Cards
         cardDictonary.put("14","diamondAce");
-        cardDictonary.put("15","diamondOne");
+        cardDictonary.put("15","diamondAce");
         cardDictonary.put("16","diamondTwo");
         cardDictonary.put("17","diamondThree");
         cardDictonary.put("18","diamondFour");
@@ -59,7 +61,7 @@ public class Cards {
 
         //HeartsCard
         cardDictonary.put("28","heartsAce");
-        cardDictonary.put("29","heartsOne");
+        cardDictonary.put("29","heartsAce");
         cardDictonary.put("30","heartsTwo");
         cardDictonary.put("31","heartsThree");
         cardDictonary.put("32","heartsFour");
@@ -76,7 +78,7 @@ public class Cards {
 
         //SpadesCard
         cardDictonary.put("42","spadesAce");
-        cardDictonary.put("43","spadesOne");
+        cardDictonary.put("43","spadesAce");
         cardDictonary.put("44","spadesTwo");
         cardDictonary.put("45","spadesThree");
         cardDictonary.put("46","spadesFour");

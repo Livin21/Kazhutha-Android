@@ -43,7 +43,7 @@ public class SinglePlayer extends AppCompatActivity {
     {
         ImageView computerCardDisplay=(ImageView)findViewById(R.id.computerCard);
         //TODO:Uncomment below line when assets are imported;
-        //computerCardDisplay.setImageResource(getResources().getIdentifier(cardName,"drawable",this.getPackageName()));
+        computerCardDisplay.setImageResource(getResources().getIdentifier(cardName,"drawable",this.getPackageName()));
 
     }
 
@@ -60,7 +60,7 @@ public class SinglePlayer extends AppCompatActivity {
             ImageView userCardDisplay=(ImageView)findViewById(dynamicImageViewId);
             int imageResourceId=getResources().getIdentifier(generatedCardinSmall,"drawable",this.getPackageName());
             //TODO:Uncomment below line when assets are imported
-            //userCardDisplay.setImageResource(imageResourceId);
+            userCardDisplay.setImageResource(imageResourceId);
             if(firstTime) {
                 userCards.add(myCard);
             }
@@ -103,6 +103,7 @@ public class SinglePlayer extends AppCompatActivity {
                 computerCard=userCards.get(tag);
                 Log.i("Match found", cardUserPlayed.type + " " + computerCard.type);
                 userCards.set(tag, Cards.deadCard);
+                ((ImageView) view).setImageResource(R.drawable.backface);
             }
         }
 
