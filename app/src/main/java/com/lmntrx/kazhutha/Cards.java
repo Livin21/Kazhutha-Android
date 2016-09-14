@@ -164,6 +164,9 @@ public class Cards {
     static Cards spadesQueen=new Cards(12,"Black","spades");
     static Cards spadesKing=new Cards(13,"Black","spades");
 
+    //DeadCard for game logic
+    static Cards deadCard=new Cards(999,"Blue","dead");
+
 //Card objects end
 
     public static Cards getCard(String cardName)
@@ -233,7 +236,7 @@ public class Cards {
             case "spadesQueen":return spadesQueen;
             case "spadesKing":return spadesKing;
         }
-        return(new Cards(999,"blue","blue"));
+        return(deadCard);//Dead card
     }
 }
 
