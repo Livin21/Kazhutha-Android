@@ -20,6 +20,9 @@ public class SinglePlayer extends AppCompatActivity {
 
     ArrayList<Cards>userCards=new ArrayList<Cards>();
     Cards computerCard;
+    boolean gameOver=false;
+    int numberOfTries=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,19 +46,28 @@ public class SinglePlayer extends AppCompatActivity {
         String nextGeneratedCard=Cards.cardDictonary.get(String.valueOf(rg.nextInt(55)));
         Log.i("NextGenCard",nextGeneratedCard);
         computerCard=Cards.getCard(nextGeneratedCard);
+        numberOfTries++;
     }
 
     public void playCard(View view)
     {
-        ImageView card=(ImageView) view;
-        int tag=Integer.parseInt(card.getTag().toString());
-        Cards cardUserPlayed=userCards.get(tag);
-        Log.i("CardUserPlayed",cardUserPlayed.type+" "+cardUserPlayed.color);
-        if(cardUserPlayed.type.equals(computerCard.type)&& !cardUserPlayed.type.equals("dead"))
+        numberOfTries++;
+        if (!gameOver) {
+            ImageView card = (ImageView) view;
+            int tag = Integer.parseInt(card.getTag().toString());
+            Cards cardUserPlayed = userCards.get(tag);
+            Log.i("CardUserPlayed", cardUserPlayed.type + " " + cardUserPlayed.color);
+            if (cardUserPlayed.type.equals(computerCard.type) && !cardUserPlayed.type.equals("dead")) {
+                computerCard=userCards.get(tag);
+                Log.i("Match found", cardUserPlayed.type + " " + computerCard.type);
+                userCards.set(tag, Cards.deadCard);
+            }
+        }
+        gameOver=true;
+        for(Cards card:userCards)
         {
-            //TODO:Finish Game Logic
-            Log.i("Jayicheda",cardUserPlayed.type+" "+computerCard.type);
-            userCards.set(tag,Cards.deadCard);
+            if(!card.type.equals("dead"))
+                gameOver=false;
         }
 
         /*Logic to check dead card
@@ -64,5 +76,11 @@ public class SinglePlayer extends AppCompatActivity {
             Log.i("DeadCard",String.valueOf(tag));
         }
         */
+        if(gameOver)
+        {
+            //TODO:GAME OVER LOGIC
+            Log.i("Game over","Yes");
+            Log.i("Score",String.valueOf(numberOfTries));
+        }
     }
 }

@@ -165,7 +165,7 @@ public class Cards {
     static Cards spadesKing=new Cards(13,"Black","spades");
 
     //DeadCard for game logic
-    static Cards deadCard=new Cards(999,"Blue","dead");
+    static Cards deadCard=new Cards(999,"dead","dead");
 
 //Card objects end
 
