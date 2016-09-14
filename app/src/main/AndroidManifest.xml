@@ -23,22 +23,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".SinglePlayer"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".MainMenu" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Instructions"
             android:label="@string/title_activity_instructions"
             android:parentActivityName=".MainMenu"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.lmntrx.kazhutha.MainMenu" />
-        </activity>
-        <activity
-            android:name=".GameInstructions"
-            android:label="@string/title_activity_game_instructions"
-            android:parentActivityName=".MainMenu"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.lmntrx.kazhutha.MainMenu" />
