@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/template"
+    android:background="@drawable/newbg"
     tools:context="com.lmntrx.kazhutha.SinglePlayer">
 
     <RelativeLayout
@@ -29,12 +29,13 @@
             android:layout_centerHorizontal="true" />
 
         <Button
+
             android:layout_marginEnd="-8dp"
             android:layout_marginStart="-8dp"
             android:layout_marginLeft="-8dp"
             android:layout_marginRight="-8dp"
             android:layout_marginBottom="-8dp"
-            android:theme="@style/buttonTheme2"
+            android:theme="@style/buttonTheme"
             android:layout_centerHorizontal="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,6 +64,8 @@
             android:id="@+id/computerCard" />
 
         <GridLayout
+
+
             android:layout_below="@id/computerCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -168,15 +171,13 @@
         <Button
             android:theme="@style/buttonTheme2"
 
-            android:layout_marginEnd="-8dp"
-            android:layout_marginStart="-8dp"
-            android:layout_marginLeft="-8dp"
-            android:layout_marginRight="-8dp"
-            android:layout_marginBottom="-8dp"
-            android:layout_alignParentBottom="true"
+
+
+            android:layout_centerHorizontal="true"
+
             android:textSize="40sp"
             android:layout_below="@id/userCards"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cut"
             android:onClick="generateNewCard"
