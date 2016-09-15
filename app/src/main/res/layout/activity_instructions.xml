@@ -1,26 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.lmntrx.kazhutha.Instructions">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+
+    >
+
+
+    <TextView
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:text="-Touch to match playing cards by the same family"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="20sp"/>
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <TextView
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Each click cost you a TRY"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="20sp"/>
 
-    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-If no cards match with the drawn card,Then make a cut to change the drawn card"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="20sp"/>
 
-    <include layout="@layout/content_instructions" />
+    <TextView
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Player wins if all cards are played before 10 tries"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="20sp"/>
 
-</android.support.design.widget.CoordinatorLayout>
+    <TextView
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-If number of tries>10,Hello Donkey :P"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="20sp"/>
+</LinearLayout>
+
+</ScrollView>
