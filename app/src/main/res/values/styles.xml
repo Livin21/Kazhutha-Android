@@ -6,11 +6,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -19,11 +22,13 @@
 
 
     <style name="buttonTheme" parent="Widget.AppCompat.Button.Colored">
-       <item name="android:colorBackground">@color/buttonColor1</item>
+       <item name="colorButtonNormal">@color/buttonColor1</item>
+        <item name="android:textColor">#fff</item>
     </style>
 
     <style name="buttonTheme2" parent="Widget.AppCompat.Button.Colored">
-        <item name="colorButtonNormal">@color/buttonColor2</item>
+        <item name="colorButtonNormal">@color/buttonColor1</item>
+        <item name="android:textColor">#fff</item>
     </style>
 
 </resources>

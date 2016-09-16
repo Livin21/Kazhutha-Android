@@ -127,6 +127,8 @@ public class SinglePlayer extends AppCompatActivity {
 
     public void displayLoseLayout()
     {
+        RelativeLayout gameLayout= (RelativeLayout) findViewById(R.id.computerCards);
+        gameLayout.setVisibility(View.GONE);
         RelativeLayout loseLayout=(RelativeLayout)findViewById(R.id.loseLayout);
         loseLayout.setVisibility(View.VISIBLE);
         TextView scoreBoard=(TextView)findViewById(R.id.scoreBoard);
@@ -137,6 +139,8 @@ public class SinglePlayer extends AppCompatActivity {
     {
         RelativeLayout loseLayout=(RelativeLayout)findViewById(R.id.loseLayout);
         loseLayout.setVisibility(View.GONE);
+        RelativeLayout gameLayout= (RelativeLayout) findViewById(R.id.computerCards);
+        gameLayout.setVisibility(View.VISIBLE);
     }
 
     public void restartGame(View view)
