@@ -47,11 +47,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Play Again"
-            android:textSize="40dp"
+            android:textSize="80dp"
             android:onClick="restartGame"
             android:id="@+id/restartButton"
             android:layout_alignParentBottom="true"
           />
+
+
 
     </RelativeLayout>
 

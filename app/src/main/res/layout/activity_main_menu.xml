@@ -12,12 +12,11 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="2">
+        android:weightSum="3">
 
 
 
     <Button
-
         android:theme="@style/buttonTheme"
 
         android:layout_marginEnd="-8dp"
@@ -29,16 +28,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PLAY"
-        android:textSize="40sp"
+        android:textSize="45sp"
         android:onClick="goToSinglePlayer"
         android:id="@+id/button"
         />
 
     <Button
-
         android:theme="@style/buttonTheme2"
 
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:layout_marginEnd="-8dp"
         android:layout_marginStart="-8dp"
         android:layout_marginLeft="-8dp"
@@ -51,7 +49,15 @@
         android:text="Instructions"
         android:onClick="goToInstructions"
         android:id="@+id/button2"
+
      />
+
+        <Button
+            android:alpha="0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
 
     </LinearLayout>
 
